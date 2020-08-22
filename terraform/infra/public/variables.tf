@@ -1,5 +1,5 @@
 variable "eip" {
-  default = "10.0.0.20"
+  type = string
 }
 
 variable "region" {

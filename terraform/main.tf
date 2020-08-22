@@ -5,4 +5,9 @@ provider "aws" {
 
 module "private" {
   source = "./infra/private"
+  eip    = var.eip
+}
+
+variable "eip" {
+  type = string
 }
