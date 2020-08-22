@@ -1,15 +1,8 @@
-provider "newrelic" {
-  version = ">= 2.2.1"
+provider "aws" {
+  region = "us-east-1"
 }
 
-terraform {
-  backend "s3" {}
-}
 
 module "private" {
   source = "./infra/private"
-}
-
-module "public" {
-  source = "./infra/public"
 }
